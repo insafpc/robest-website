@@ -1,0 +1,16 @@
+//Bootstrap
+@import "common/variables";
+@import "~bootstrap";
+
+//Icons
+@import "common/icon";
+
+// Global styles
+@import 'common/globel';
+@import 'common/mixins';
+
+//Page styles
+
+ //Components styles
+@import "components/card";
+@import "components/toaster";

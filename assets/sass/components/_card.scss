@@ -1,0 +1,145 @@
+.card {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+
+  &-icon-large {
+    cursor: pointer;
+  }
+}
+
+.pink-bg--light {
+  background: lighten($pink, 30);
+
+  &:before {
+    border-bottom: 25px solid lighten($pink, 30);
+  }
+
+  &:after {
+    border-top: 25px solid lighten($pink, 30);
+  }
+}
+
+.green-bg--light {
+  background: lighten($green, 30);
+
+  &:before {
+    border-bottom: 25px solid lighten($green, 30);;
+
+  }
+
+  &:after {
+    border-top: 25px solid lighten($green, 30);
+  }
+}
+
+.purple-bg--light {
+  background: lighten($purple, 30);
+
+  &:before {
+    border-bottom: 25px solid lighten($purple, 30);;
+
+  }
+
+  &:after {
+    border-top: 25px solid lighten($purple, 30);
+  }
+}
+
+.orange-bg--light {
+  background: lighten($orange, 30);
+
+  &:before {
+    border-bottom: 25px solid lighten($orange, 30);;
+
+  }
+
+  &:after {
+    border-top: 25px solid lighten($orange, 30);
+  }
+}
+
+.robest--shape {
+  width: 100px;
+  height: 55px;
+  position: relative;
+  margin-top: 55px;
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+  }
+
+  &--small {
+    position: relative;
+    width: 70px;
+    height: 40.41px;
+    background-color: $primary--light;
+    margin: 20.21px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      margin: 0;
+      padding: 0;
+      color: $white;
+
+      span {
+        font-size: 36px;
+      }
+    }
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      width: 0;
+      border-left: 35px solid transparent;
+      border-right: 35px solid transparent;
+    }
+
+    &:before {
+      bottom: 100%;
+      border-bottom: 20.21px solid $primary--light;
+    }
+
+    &:after {
+      top: 100%;
+      width: 0;
+      border-top: 20.21px solid $primary--light;
+    }
+  }
+}
+
+.border-transparent {
+  border: none !important;
+}
+
+.quick-navigation {
+  @include rfs(-50px, top);
+  @include rfs(-30px, margin-bottom);
+
+  position: relative;
+  background: $white;
+
+  @media (min-width: 992px) {
+    background: transparent;
+  }
+}

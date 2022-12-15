@@ -1,0 +1,79 @@
+// Colours
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+$blue: #007bff !default;
+$indigo: #6610f2 !default;
+$purple: #695E93 !default;
+$pink: #e83e8c !default;
+$red: #dc3545 !default;
+$orange: #fd7e14 !default;
+$yellow: #ffc107 !default;
+$green: #28a745 !default;
+$teal: #20c997 !default;
+$cyan: #17a2b8 !default;
+$ebony: #281C2D !default;
+$purple-haze: #BEAFC2 !default;
+$violet: #8155BA !default;
+
+$primary: $ebony;
+$primary--light: $purple;
+$secondary: $purple-haze;
+$secondary--dark: $violet;
+$success: $green;
+$info: $cyan;
+$warning: $yellow;
+$danger: $red;
+$light: $gray-100;
+$dark: $gray-800;
+//$vue:           #42b883;
+//$react:         #00d8ff;
+//$magento:       #f46f25;
+//$wooCommerce:   #96588a;
+//$laravel:       #f55247;
+//$shopware:      #189eff;
+//$bootstrap:     #563d7c;
+//$flutter:       #16bafd;
+
+$theme-colors: () !default;
+$theme-colors: map-merge(
+    (
+      "primary": $primary,
+      "secondary": $secondary,
+      "success": $success,
+      "info": $info,
+      "warning": $warning,
+      "danger": $danger,
+      "light": $light,
+      "dark": $dark,
+    ),
+    $theme-colors
+);
+
+$border-radius: 0;
+$input-btn-focus-box-shadow: none;
+
+  // // Body
+$body-bg: $gray-200;
+
+// Cards
+$card-spacer-x: 0.9375rem;
+$card-spacer-y: 0.625rem;
+$card-cap-bg: #fbfbfb;
+$card-border-color: #e8eced;
+
+
+
+// Nav Pills
+$nav-pills-border-radius: 0;
+
+

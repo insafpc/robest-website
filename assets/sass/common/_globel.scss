@@ -1,0 +1,26 @@
+body {
+  font-family: 'Abel', sans-serif;;
+}
+
+main {
+  padding-bottom: 40px;
+}
+
+img {
+  width: auto;
+  max-width: 100%;
+}
+
+.container-fluid {
+  max-width: 2300px;
+}
+
+a {
+  transition: color 0.3s linear;
+  -webkit-transition: color 0.3s linear;
+  -moz-transition: color 0.3s linear;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

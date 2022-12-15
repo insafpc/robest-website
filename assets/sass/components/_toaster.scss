@@ -1,0 +1,11 @@
+.toast {
+  border-radius: 0;
+
+  &-body {
+    display: none !important;
+  }
+
+  &-header {
+    font-weight: normal;
+  }
+}
